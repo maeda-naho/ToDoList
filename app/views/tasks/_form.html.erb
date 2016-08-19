@@ -25,12 +25,12 @@
   </div>
   <div class="field">
     <%= f.label :category_id %><br>
-   <%= f.collection_select :category_id, Category.all, :categoryname,:categoryname, :include_blank => true %> 
+   <%= f.collection_select :category_id, Category.all, :categoryname, :categoryname %> 
 
   </div>
   <div class="field">
     <%= f.label :user_id %><br>
-    <%= f.collection_select :user_id, User.all, :id, :username, :include_blank => true %> 
+    <%= f.collection_select :user_id, User.all, :id, :username %> 
   </div>
   <div class="actions">
     <%= f.submit %>
