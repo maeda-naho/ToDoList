@@ -12,33 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :done %><br>
+    <%= f.label :完了 %><br>
     <%= f.check_box :done %>
   </div>
   <div class="field">
-    <%= f.label :due_date %><br>
+    <%= f.label :返却予定日 %><br>
     <%= f.date_select :due_date %>
   </div>
 
 
     <div class="field">
-    <%= f.label :due_date %><br>
-    <%= Date.new(2016, 8, 20) %>
+    <%= f.label :貸出日 %><br>
+    <%= Date.new(2016, 8, 24) %>
   </div>
 
 
-
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :本の名前 %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :category_id %><br>
+    <%= f.label :カテゴリー %><br>
    <%= f.collection_select :category_id, Category.all, :categoryname, :categoryname %> 
 
   </div>
   <div class="field">
-    <%= f.label :user_id %><br>
+    <%= f.label :ユーザー %><br>
     <%= f.collection_select :user_id, User.all, :username, :username %> 
   </div>
   <div class="actions">

@@ -1,16 +1,17 @@
 ﻿<p id="notice"><%= notice %></p>
 
-<h1>カテゴリー一覧</h1>
+<font face=" MS UI Gothic" size="5" color=" #FFA500">カテゴリー一覧 </font><br><br>
 
 <table>
   <thead>
     <tr>
       <th>カテゴリー名</th>
-      <th colspan="3"></th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
-  <tbody>
+
+<tbody>
     <% @categories.each do |category| %>
       <tr>
         <td><%= category.categoryname %></td>
